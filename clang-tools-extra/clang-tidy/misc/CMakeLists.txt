@@ -40,6 +40,7 @@ add_clang_library(clangTidyMiscModule
   UnusedParametersCheck.cpp
   UnusedUsingDeclsCheck.cpp
   UseAnonymousNamespaceCheck.cpp
+  MacroBodyCheck.cpp
 
   LINK_LIBS
   clangAnalysis

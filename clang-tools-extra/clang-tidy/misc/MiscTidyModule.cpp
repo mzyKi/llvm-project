@@ -31,6 +31,7 @@
 #include "UnusedParametersCheck.h"
 #include "UnusedUsingDeclsCheck.h"
 #include "UseAnonymousNamespaceCheck.h"
+#include "MacroBodyCheck.h"
 
 namespace clang::tidy {
 namespace misc {
@@ -78,6 +79,7 @@ public:
         "misc-unused-using-decls");
     CheckFactories.registerCheck<UseAnonymousNamespaceCheck>(
         "misc-use-anonymous-namespace");
+    CheckFactories.registerCheck<MacroBodyCheck>("misc-macro-body");
   }
 };
 
